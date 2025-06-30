@@ -1,0 +1,11 @@
+(library
+ (name logicalc)
+
+ (libraries cmdliner str))
+
+(ocamllex lexer)
+
+(menhir
+ (modules parser)
+ (infer true)
+ )

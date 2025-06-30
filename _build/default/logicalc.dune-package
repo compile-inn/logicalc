@@ -1,0 +1,4 @@
+(lang dune 3.17)
+(name logicalc)
+(sections (lib .) (bin ../../bin) (doc ../../doc/logicalc))
+(files (lib (META dune-package opam)) (bin (logicalc)) (doc (README.md)))

@@ -1,0 +1,5 @@
+# dune promote
+# OCAMLPARAM: unset
+# Shared cache: enabled-except-user-rules
+# Shared cache location: /home/absrdm/.cache/dune/db
+# Workspace root: /home/absrdm/codex/plloo/logicalc
