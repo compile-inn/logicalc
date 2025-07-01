@@ -8,13 +8,9 @@
   true
 
   $ logicalc -e 'true -> false'
+  false
 
   $ logicalc -e 'NOT true OR true'
   false
 
   $ logicalc -e 'NOT (true OR true)'
-  logicalc: internal error, uncaught exception:
-            Failure("lexing: empty token")
-            
-  [125]
-

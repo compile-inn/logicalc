@@ -14,4 +14,6 @@ rule token =
    | "OR" { OR }
    | "->" { IMPL }
    | "NOT" { NOT }
+   | "(" { LPAREN }
+   | ")" { RPAREN }
    | eof { EOF }

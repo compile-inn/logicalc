@@ -8,6 +8,8 @@
 %token OR
 %token IMPL
 %token NOT
+%token LPAREN
+%token RPAREN
 %token EOF
 
 %nonassoc NOT
@@ -27,3 +29,4 @@ expression:
    | e1 = expression; OR; e2 = expression { Disjunction (e1, e2) }
    | e1 = expression; IMPL; e2 = expression { Implication (e1, e2) }
    | NOT; e1 = expression { Negation e1 }
+   | LPAREN; e = expression; RPAREN { e }

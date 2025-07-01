@@ -21,7 +21,7 @@ let eval_lb lb =
 
 let repl () =
   while true do
-    Printf.printf "logical>> %!";
+    Printf.printf "logicalc>> %!";
     let lb = Lexing.from_channel Stdlib.stdin in
     eval_lb lb
   done

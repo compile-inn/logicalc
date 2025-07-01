@@ -1,4 +1,13 @@
-type token = TRUE of bool | OR | NOT | IMPL | FALSE of bool | EOF | AND
+type token =
+    TRUE of bool
+  | RPAREN
+  | OR
+  | NOT
+  | LPAREN
+  | IMPL
+  | FALSE of bool
+  | EOF
+  | AND
 val menhir_begin_marker : int
 val xv_prog : Syntax.expression
 val xv_expression : Syntax.expression

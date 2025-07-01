@@ -3,8 +3,10 @@
 
 type token = 
   | TRUE of (bool)
+  | RPAREN
   | OR
   | NOT
+  | LPAREN
   | IMPL
   | FALSE of (bool)
   | EOF
