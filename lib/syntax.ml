@@ -3,4 +3,5 @@ type expression =
   | Conjunction of expression * expression
   | Disjunction of expression * expression
   | Implication of expression * expression
+  | Equivalence of expression * expression
   | Negation of expression

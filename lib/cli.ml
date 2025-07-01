@@ -6,6 +6,7 @@ let rec eval = function
   | Disjunction (e1, e2) -> if (eval e1 || eval e2) then true else false
   | Negation e -> if eval e then false else true
   | Implication (e1, e2) -> if (eval e1 && not (eval e2)) then false else true
+  | Equivalence (e1, e2) -> if eval e1 = eval e2 then true else false
 
 let bool_to_string b = if b then "true" else "false" 
 

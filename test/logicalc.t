@@ -15,3 +15,6 @@
 
   $ logicalc -e 'NOT (true OR true)'
   false
+
+  $ logicalc -e 'NOT (true AND false) <-> true'
+  true

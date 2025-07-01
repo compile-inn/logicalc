@@ -13,6 +13,7 @@ rule token =
    | "AND" { AND }
    | "OR" { OR }
    | "->" { IMPL }
+   | "<->" { EQUIV }
    | "NOT" { NOT }
    | "(" { LPAREN }
    | ")" { RPAREN }
