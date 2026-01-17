@@ -18,3 +18,8 @@ logicalc>> NOT (true OR false) -> false<br>
 true<br>
 logicalc>> NOT (true OR false) <-> (NOT true) AND (NOT false)<br>
 true<br>
+
+## To fix
+For some reason I do not understand now, the following De Morgan law does not work in my implementation.<br>
+logicalc>> NOT (true AND false) <-> NOT true OR NOT false<br>
+false
